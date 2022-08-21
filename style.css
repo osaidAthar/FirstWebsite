@@ -3,6 +3,7 @@ body {
     margin: 0;
     text-align: center;
     font-family: 'Merriweather', serif;
+    background-color: #ff4c68;
   }
 
   
@@ -58,6 +59,7 @@ body {
     width: 100%;
     height: auto;
     margin: 0;
+    margin-bottom: -4px;
 
 }
 
@@ -190,40 +192,73 @@ body {
 
   /* ************************************************************** */
 
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
-  
-  li {
-    float: left;
-  }
-  
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  li a:hover:not(.active) {
-    background-color: #111;
-  }
-  
-  .active {
-    background-color: #04AA6D;
-  }
+  /* body {
+    font-family: "Montserrat", sans-serif;
+    background-color: aliceblue;
+} */
 
-  .im{
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
     align-items: center;
-    margin-top: 15%;
-    margin-left: 7%;
-  }
-  
+    justify-content: space-between;
+    padding: 1.1rem 5rem;
+    background-color: #3FB8F1;
+    color: #fff;
+}
+
+.brand a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+}
+
+li {
+    list-style-type: none;
+    margin-left: 3rem;
+}
+
+li > a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+
+li::after {
+    content: '';
+    width: 0rem;
+    height: 0.15rem;
+    background-color: #fff;
+    display: block;
+    border-radius: 0.2rem;
+    margin: 0.2rem auto 0 auto;
+    transition: all 0.3s ease-in-out;
+}
+
+li:hover::after {
+    width: 2rem;
+}
+
+/* color section */
+.colored-section {
+  background-color: #3FB8F1;
+  color: #fff;
+}
+
+/* .color-section {
+  background-color: #ff4c68;
+  color: #fff;
+} */
